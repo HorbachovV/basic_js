@@ -25,3 +25,21 @@ function countCharacters(string) {
 let characterCount = countCharacters(text);
 
 console.log(characterCount);
+
+const subscribers = [
+  {name: 'Vova', age: 33},
+  {name: 'Ivan', age: 31},
+  {name: 'Petro', age: 40},
+  {name: 'Iryna', age: 23},
+]
+
+function helloSubscribers(array) {
+
+  if(array.length >= 4) {
+    console.log('Hello dear subscribers')
+  } else {
+    console.log('No')
+  }
+}
+
+helloSubscribers(subscribers)
