@@ -26,6 +26,8 @@ let characterCount = countCharacters(text);
 
 console.log(characterCount);
 
+
+//subscriber function
 const subscribers = [
   {name: 'Vova', age: 33},
   {name: 'Ivan', age: 31},
@@ -43,3 +45,16 @@ function helloSubscribers(array) {
 }
 
 helloSubscribers(subscribers)
+
+
+//square array number
+function squareArr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *= arr[i]
+  }
+  return arr
+}
+
+const numbers = [1, 2, 3, 4, 5, 6]
+
+console.log(squareArr(numbers))
