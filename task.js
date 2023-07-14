@@ -58,3 +58,48 @@ function squareArr(arr) {
 const numbers = [1, 2, 3, 4, 5, 6]
 
 console.log(squareArr(numbers))
+
+
+//add adjective
+const friends = [
+  {
+    name: 'Joe',
+    gender: 'Male'
+  },
+  {
+    name: 'Fibi',
+    gender: 'Female'
+  },
+  {
+    name: 'Ros',
+    gender: 'Male'
+  },
+  {
+    name: 'Monica',
+    gender: 'Female'
+  },
+  {
+    name: 'Rachel',
+    gender: 'Female'
+  },
+  {
+    name: 'Chandler',
+    gender: 'Male'
+  },
+]
+
+function addAdjective(arr) {
+  for (let i = 0; i < friends.length; i++) {
+    const person = arr[i]
+
+    if (person.gender === 'Male') {
+      person.name += ' is handsome'
+    } else {
+      person.name += ' is beatiful'
+    }
+  }
+
+  return arr
+}
+
+console.log(addAddjective(friends))
