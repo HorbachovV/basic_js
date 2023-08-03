@@ -207,3 +207,23 @@ hello();
 // 2
 // 4
 // { name: 'Bobby', fn: [Function: fn] }
+
+// =========================================================
+// Замикання(Closure) #2
+// =========================================================
+
+const firstName = "Volodymyr"
+
+function sayHello () {
+    const lastName = "Horbachov"
+
+    return function () {
+        console.log(firstName);
+        console.log(lastName)
+    }
+}
+
+sayHello()() // Volodymyr Horbachov
+
+const test = sayHello();
+test() // Volodymyr Horbachov
