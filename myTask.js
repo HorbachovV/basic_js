@@ -131,3 +131,27 @@ if (isNewVersion(version1, version2)) {
 } else {
     console.log(`${version1} is newest version`);
 }
+
+//sort array where sum sub array is equal or more than 100
+const arr = [
+  [50, 60],
+  [1, 2, 3],
+  [4, 5, 6],
+  [50, 60, 90],
+  [7, 8, 9],
+  [10, 11, 12],
+  [50, 60],
+];
+
+const sums = arr.map((subarr) => subarr.reduce((a, b) => a + b, 0));
+
+sums.filter((elem) => elem >= 100)
+
+const indexes = [];
+
+for (let i = 0; i < sums.length; i++) {
+  if (sums[i] >= 100) {
+    indexes.push(i);
+  }
+}
+console.log(indexes);
