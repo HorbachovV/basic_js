@@ -61,6 +61,7 @@ let users = [
   { name: "Mike", age: 20 }
 ];
 
+
 // Сортування по віку
 let sortedByAge = users.sort((a, b) => a.age - b.age);
 
