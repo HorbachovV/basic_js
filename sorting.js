@@ -64,5 +64,4 @@ let users = [
 // Сортування по віку
 let sortedByAge = users.sort((a, b) => a.age - b.age);
 
-console.log(sortedByAge);
-// [{name: "Mike", age: 20}, {name: "Anna", age: 25}, {name: "John", age: 30}]
+console.log(sortedByAge);// [{name: "Mike", age: 20}, {name: "Anna", age: 25}, {name: "John", age: 30}]
