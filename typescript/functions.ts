@@ -35,3 +35,14 @@ function addrest(a: number, b: number, ...rest: number[]) {
 type Negate = (value: number) => number;
 // in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
 const negateFunction: Negate = (value) => value * -1;
+
+//Union types
+function printStatusCode(code: string | number) {
+	console.log(`My status code is ${code}.`);
+}
+printStatusCode(404);
+printStatusCode("404");
+
+// function printStatusCodeError(code: string | number) {
+//   console.log(`My status code is ${code.toUpperCase()}.`) // error: Property 'toUpperCase' does not exist on type 'string | number'. Property 'toUpperCase' does not exist on type 'number'
+// }
